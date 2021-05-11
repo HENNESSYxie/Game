@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,15 +55,22 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,6 +83,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\fa82bfb524fa34014d2ef9fdf43e57d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MainMenu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\table back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Tripple Damage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Defense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Attack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
