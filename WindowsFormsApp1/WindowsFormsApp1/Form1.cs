@@ -33,6 +33,7 @@ namespace WindowsFormsApp1
         Properties.Resources.Defense,Properties.Resources.Attack ,
         };
         Button first, second;
+        List<Image> res;
         public Form1()
         {
             InitializeComponent();
@@ -51,16 +52,34 @@ namespace WindowsFormsApp1
                 else
                     continue;
                 randomNumber = rnd.Next(0, lst.Count);
-                button.BackgroundImage = lst[randomNumber];
-                lst.RemoveAt(randomNumber);
-                
+                button.Image = lst[randomNumber];
+                lst.RemoveAt(randomNumber);    
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)tableLayoutPanel1.Controls[tableLayoutPanel1.Controls.Count - 1];
+            button.Image = res[0];
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)tableLayoutPanel1.Controls[tableLayoutPanel1.Controls.Count - 2];
+            button.Image = res[1];
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)tableLayoutPanel1.Controls[tableLayoutPanel1.Controls.Count - 3];
+            button.Image = res[2];
         }
 
         private void PlaceImagesToButtons()
         {
             Button button;
             int randomNumber;
+            res = new List<Image>();
             for(int i=0;i<tableLayoutPanel1.Controls.Count;i++)
             {
                 if (tableLayoutPanel1.Controls[i] is Button)
@@ -68,11 +87,10 @@ namespace WindowsFormsApp1
                 else
                     continue;
                 randomNumber = rnd.Next(0, list.Count);
-                button.BackgroundImage = list[randomNumber];
-                list.RemoveAt(randomNumber);
+                //button.Image = list[randomNumber];
+                res.Add(list[randomNumber]);
+                list.RemoveAt(randomNumber);              
             }
-        }
-
-      
+        } 
     }
 }
