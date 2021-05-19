@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,8 +39,8 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            PlaceImagesToButtonsSecond();
-            PlaceImagesToButtons();
+            //PlaceImagesToButtonsSecond();
+            //PlaceImagesToButtons();
         }
         private void PlaceImagesToButtonsSecond()
         {
@@ -55,24 +57,55 @@ namespace WindowsFormsApp1
                 button.Image = lst[randomNumber];
                 lst.RemoveAt(randomNumber);    
             }
+        }   
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            if (first != null && second != null)
+                return;
+            Button clickedButton = sender as Button;
+            if (clickedButton == null)
+                return;
+            if (clickedButton.Image != null)
+                return;
+            if (first == null)
+            {
+                first = clickedButton;
+                int num1 = rnd.Next(0, list.Count);
+                first.Image = list[num1];
+                list.RemoveAt(num1);
+                return;
+            }
+             int num = rnd.Next(0, list.Count);
+            second = clickedButton;
+            second.Image = list[num];
+            ScriptEngine engine = Python.CreateEngine();            
+            if (engine.Execute(
+                    $"from PIL import Image, ImageChops"+"\n"+
+$"image_one = Image.open({first.Image})" +"\n"+
+$"image_two = Image.open({second.Image})" + "\n" +
+"   try:" + "\n" +
+$"      diff = ImageChops.difference(image_one, image_two)" + "\n"+
+"       if diff.getbbox() is None:" + "\n"+      
+"           print('success')" + "\n") == "success")
+            {
+                
+                first = null;
+                second = null;
+            }
+            else {timer1.Start(); }
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            Button button = (Button)tableLayoutPanel1.Controls[tableLayoutPanel1.Controls.Count - 1];
-            button.Image = res[0];
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)tableLayoutPanel1.Controls[tableLayoutPanel1.Controls.Count - 2];
-            button.Image = res[1];
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)tableLayoutPanel1.Controls[tableLayoutPanel1.Controls.Count - 3];
-            button.Image = res[2];
+            timer1.Stop();
+            var img1 = first.Image;
+            var img2 = second.Image;
+            first.Image = null;
+            second.Image = null;
+            first = null;
+            second = null;
         }
 
         private void PlaceImagesToButtons()

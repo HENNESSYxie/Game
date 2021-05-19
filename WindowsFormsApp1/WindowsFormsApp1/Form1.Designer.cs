@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button36 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
@@ -103,13 +104,13 @@ namespace WindowsFormsApp1
             this.button70 = new System.Windows.Forms.Button();
             this.button71 = new System.Windows.Forms.Button();
             this.button72 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.table_back;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -174,6 +175,7 @@ namespace WindowsFormsApp1
             this.button36.Size = new System.Drawing.Size(82, 84);
             this.button36.TabIndex = 35;
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button_Click);
             // 
             // button35
             // 
@@ -183,6 +185,7 @@ namespace WindowsFormsApp1
             this.button35.Size = new System.Drawing.Size(79, 84);
             this.button35.TabIndex = 34;
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button_Click);
             // 
             // button34
             // 
@@ -192,6 +195,7 @@ namespace WindowsFormsApp1
             this.button34.Size = new System.Drawing.Size(79, 84);
             this.button34.TabIndex = 33;
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button_Click);
             // 
             // button33
             // 
@@ -201,6 +205,7 @@ namespace WindowsFormsApp1
             this.button33.Size = new System.Drawing.Size(79, 84);
             this.button33.TabIndex = 32;
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button_Click);
             // 
             // button32
             // 
@@ -210,6 +215,7 @@ namespace WindowsFormsApp1
             this.button32.Size = new System.Drawing.Size(79, 84);
             this.button32.TabIndex = 31;
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button_Click);
             // 
             // button31
             // 
@@ -219,6 +225,7 @@ namespace WindowsFormsApp1
             this.button31.Size = new System.Drawing.Size(79, 84);
             this.button31.TabIndex = 30;
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button_Click);
             // 
             // button30
             // 
@@ -228,6 +235,7 @@ namespace WindowsFormsApp1
             this.button30.Size = new System.Drawing.Size(82, 82);
             this.button30.TabIndex = 29;
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button_Click);
             // 
             // button29
             // 
@@ -237,6 +245,7 @@ namespace WindowsFormsApp1
             this.button29.Size = new System.Drawing.Size(79, 82);
             this.button29.TabIndex = 28;
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button_Click);
             // 
             // button28
             // 
@@ -246,6 +255,7 @@ namespace WindowsFormsApp1
             this.button28.Size = new System.Drawing.Size(79, 82);
             this.button28.TabIndex = 27;
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button_Click);
             // 
             // button27
             // 
@@ -255,6 +265,7 @@ namespace WindowsFormsApp1
             this.button27.Size = new System.Drawing.Size(79, 82);
             this.button27.TabIndex = 26;
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button_Click);
             // 
             // button26
             // 
@@ -264,6 +275,7 @@ namespace WindowsFormsApp1
             this.button26.Size = new System.Drawing.Size(79, 82);
             this.button26.TabIndex = 25;
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button_Click);
             // 
             // button25
             // 
@@ -273,6 +285,7 @@ namespace WindowsFormsApp1
             this.button25.Size = new System.Drawing.Size(79, 82);
             this.button25.TabIndex = 24;
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button_Click);
             // 
             // button24
             // 
@@ -282,6 +295,7 @@ namespace WindowsFormsApp1
             this.button24.Size = new System.Drawing.Size(82, 82);
             this.button24.TabIndex = 23;
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button_Click);
             // 
             // button23
             // 
@@ -291,6 +305,7 @@ namespace WindowsFormsApp1
             this.button23.Size = new System.Drawing.Size(79, 82);
             this.button23.TabIndex = 22;
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button_Click);
             // 
             // button22
             // 
@@ -300,6 +315,7 @@ namespace WindowsFormsApp1
             this.button22.Size = new System.Drawing.Size(79, 82);
             this.button22.TabIndex = 21;
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button_Click);
             // 
             // button21
             // 
@@ -309,6 +325,7 @@ namespace WindowsFormsApp1
             this.button21.Size = new System.Drawing.Size(79, 82);
             this.button21.TabIndex = 20;
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button_Click);
             // 
             // button20
             // 
@@ -318,6 +335,7 @@ namespace WindowsFormsApp1
             this.button20.Size = new System.Drawing.Size(79, 82);
             this.button20.TabIndex = 19;
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button_Click);
             // 
             // button19
             // 
@@ -327,6 +345,7 @@ namespace WindowsFormsApp1
             this.button19.Size = new System.Drawing.Size(79, 82);
             this.button19.TabIndex = 18;
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button_Click);
             // 
             // button18
             // 
@@ -336,6 +355,7 @@ namespace WindowsFormsApp1
             this.button18.Size = new System.Drawing.Size(82, 82);
             this.button18.TabIndex = 17;
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button_Click);
             // 
             // button17
             // 
@@ -345,6 +365,7 @@ namespace WindowsFormsApp1
             this.button17.Size = new System.Drawing.Size(79, 82);
             this.button17.TabIndex = 16;
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button_Click);
             // 
             // button16
             // 
@@ -354,6 +375,7 @@ namespace WindowsFormsApp1
             this.button16.Size = new System.Drawing.Size(79, 82);
             this.button16.TabIndex = 15;
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button_Click);
             // 
             // button15
             // 
@@ -363,6 +385,7 @@ namespace WindowsFormsApp1
             this.button15.Size = new System.Drawing.Size(79, 82);
             this.button15.TabIndex = 14;
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button_Click);
             // 
             // button14
             // 
@@ -372,6 +395,7 @@ namespace WindowsFormsApp1
             this.button14.Size = new System.Drawing.Size(79, 82);
             this.button14.TabIndex = 13;
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button_Click);
             // 
             // button13
             // 
@@ -381,6 +405,7 @@ namespace WindowsFormsApp1
             this.button13.Size = new System.Drawing.Size(79, 82);
             this.button13.TabIndex = 12;
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button_Click);
             // 
             // button12
             // 
@@ -390,6 +415,7 @@ namespace WindowsFormsApp1
             this.button12.Size = new System.Drawing.Size(82, 82);
             this.button12.TabIndex = 11;
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button_Click);
             // 
             // button11
             // 
@@ -399,6 +425,7 @@ namespace WindowsFormsApp1
             this.button11.Size = new System.Drawing.Size(79, 82);
             this.button11.TabIndex = 10;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button_Click);
             // 
             // button10
             // 
@@ -408,6 +435,7 @@ namespace WindowsFormsApp1
             this.button10.Size = new System.Drawing.Size(79, 82);
             this.button10.TabIndex = 9;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button_Click);
             // 
             // button9
             // 
@@ -417,6 +445,7 @@ namespace WindowsFormsApp1
             this.button9.Size = new System.Drawing.Size(79, 82);
             this.button9.TabIndex = 8;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button_Click);
             // 
             // button8
             // 
@@ -426,6 +455,7 @@ namespace WindowsFormsApp1
             this.button8.Size = new System.Drawing.Size(79, 82);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button_Click);
             // 
             // button7
             // 
@@ -435,6 +465,7 @@ namespace WindowsFormsApp1
             this.button7.Size = new System.Drawing.Size(79, 82);
             this.button7.TabIndex = 6;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button_Click);
             // 
             // button6
             // 
@@ -444,6 +475,7 @@ namespace WindowsFormsApp1
             this.button6.Size = new System.Drawing.Size(82, 82);
             this.button6.TabIndex = 5;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button_Click);
             // 
             // button5
             // 
@@ -453,6 +485,7 @@ namespace WindowsFormsApp1
             this.button5.Size = new System.Drawing.Size(79, 82);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button_Click);
             // 
             // button4
             // 
@@ -462,6 +495,7 @@ namespace WindowsFormsApp1
             this.button4.Size = new System.Drawing.Size(79, 82);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // button3
             // 
@@ -471,7 +505,7 @@ namespace WindowsFormsApp1
             this.button3.Size = new System.Drawing.Size(79, 82);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // button2
             // 
@@ -481,7 +515,7 @@ namespace WindowsFormsApp1
             this.button2.Size = new System.Drawing.Size(79, 82);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // button1
             // 
@@ -491,11 +525,10 @@ namespace WindowsFormsApp1
             this.button1.Size = new System.Drawing.Size(79, 82);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.table_back;
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 6;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -876,11 +909,15 @@ namespace WindowsFormsApp1
             this.button72.TabIndex = 0;
             this.button72.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 800;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -971,6 +1008,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
