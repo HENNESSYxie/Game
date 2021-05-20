@@ -166,5 +166,23 @@
   <ItemGroup>
     <None Include="Images\Attack.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DoubleDefense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DoubleDamage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Inspect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\HealthRegen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DeadlyPurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Purple.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

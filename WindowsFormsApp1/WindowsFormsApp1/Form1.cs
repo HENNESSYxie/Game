@@ -14,51 +14,52 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        Random rnd = new Random();
-        List<Image> list = new List<Image>() { Properties.Resources.Attack, Properties.Resources.Red,
-        Properties.Resources.Defense,Properties.Resources.Blue,
-        Properties.Resources.Yellow,Properties.Resources.Defense,
-        Properties.Resources.Red, Properties.Resources.Red,
-        Properties.Resources.Empty,Properties.Resources.Empty,
-        Properties.Resources.Attack, Properties.Resources.Attack,
-        Properties.Resources.Defense,Properties.Resources.Defense,
-        Properties.Resources.Green,Properties.Resources.Green,
-        Properties.Resources.Blue, Properties.Resources.Clones, 
-        Properties.Resources.Clones, Properties.Resources.Attack,
-        Properties.Resources.Attack, Properties.Resources.Defense,
-        Properties.Resources.Defense, Properties.Resources.Tripple_Damage,
-        Properties.Resources.Tripple_Damage,Properties.Resources.Yellow,
-        Properties.Resources.Defense,Properties.Resources.Defense,
-        Properties.Resources.Clones, Properties.Resources.Defense,
-         Properties.Resources.Red,Properties.Resources.Clones,
-        Properties.Resources.Green,Properties.Resources.Green,
-        Properties.Resources.Defense,Properties.Resources.Attack ,
-        };
+        Dictionary<Button, Bitmap> dict;   
         Button first, second;
-        List<Image> res;
+        List<Bitmap> res;
         public Form1()
         {
-            InitializeComponent();
-            //PlaceImagesToButtonsSecond();
-            //PlaceImagesToButtons();
+            InitializeComponent();           
+            dict = new Dictionary<Button, Bitmap>();
+            dict.Add(button1, Properties.Resources.Attack);
+            dict.Add(button2, Properties.Resources.Blue);
+            dict.Add(button3, Properties.Resources.Green);
+            dict.Add(button4, Properties.Resources.Blue);
+            dict.Add(button5, Properties.Resources.DoubleDamage);
+            dict.Add(button6, Properties.Resources.Defense);
+            dict.Add(button7, Properties.Resources.DeadlyPurple);
+            dict.Add(button8, Properties.Resources.Purple);
+            dict.Add(button9, Properties.Resources.DoubleDefense);
+            dict.Add(button10, Properties.Resources.HealthRegen);
+            dict.Add(button11, Properties.Resources.Attack);
+            dict.Add(button12, Properties.Resources.Blue);
+            dict.Add(button13, Properties.Resources.Green);
+            dict.Add(button14, Properties.Resources.HealthRegen);
+            dict.Add(button15, Properties.Resources.Inspect);
+            dict.Add(button16, Properties.Resources.Inspect);
+            dict.Add(button17, Properties.Resources.Defense);
+            dict.Add(button18, Properties.Resources.DoubleDamage);
+            dict.Add(button19, Properties.Resources.Purple);
+            dict.Add(button20, Properties.Resources.Blue);
+            dict.Add(button21, Properties.Resources.Attack);
+            dict.Add(button22, Properties.Resources.Defense);
+            dict.Add(button23, Properties.Resources.DeadlyPurple);
+            dict.Add(button24, Properties.Resources.DeadlyPurple);
+            dict.Add(button25, Properties.Resources.Attack);
+            dict.Add(button26, Properties.Resources.Green);
+            dict.Add(button27, Properties.Resources.Green);
+            dict.Add(button28, Properties.Resources.Defense);
+            dict.Add(button29, Properties.Resources.DeadlyPurple);
+            dict.Add(button30, Properties.Resources.DoubleDefense);
+            dict.Add(button31, Properties.Resources.HealthRegen);
+            dict.Add(button32, Properties.Resources.HealthRegen);
+            dict.Add(button33, Properties.Resources.DoubleDamage);
+            dict.Add(button34, Properties.Resources.DoubleDamage);
+            dict.Add(button35, Properties.Resources.Purple);
+            dict.Add(button36, Properties.Resources.Purple);
+            
         }
-        private void PlaceImagesToButtonsSecond()
-        {
-            var lst = new List<Image>(list);
-            Button button;
-            int randomNumber;
-            for (int i = 0; i < tableLayoutPanel2.Controls.Count; i++)
-            {
-                if (tableLayoutPanel2.Controls[i] is Button)
-                    button = (Button)tableLayoutPanel2.Controls[i];
-                else
-                    continue;
-                randomNumber = rnd.Next(0, lst.Count);
-                button.Image = lst[randomNumber];
-                lst.RemoveAt(randomNumber);    
-            }
-        }   
-
+        
         private void button_Click(object sender, EventArgs e)
         {
             if (first != null && second != null)
@@ -71,32 +72,33 @@ namespace WindowsFormsApp1
             if (first == null)
             {
                 first = clickedButton;
-                int num1 = rnd.Next(0, list.Count);
-                first.Image = list[num1];
-                list.RemoveAt(num1);
+                first.Image = dict[clickedButton];
                 return;
             }
-             int num = rnd.Next(0, list.Count);
             second = clickedButton;
-            second.Image = list[num];
-            ScriptEngine engine = Python.CreateEngine();            
-            if (engine.Execute(
-                    $"from PIL import Image, ImageChops"+"\n"+
-$"image_one = Image.open({first.Image})" +"\n"+
-$"image_two = Image.open({second.Image})" + "\n" +
-"   try:" + "\n" +
-$"      diff = ImageChops.difference(image_one, image_two)" + "\n"+
-"       if diff.getbbox() is None:" + "\n"+      
-"           print('success')" + "\n") == "success")
+            second.Image = dict[clickedButton];
+            if (GetHash(new Bitmap(first.Image)).SequenceEqual(GetHash(new Bitmap(second.Image))))
             {
-                
                 first = null;
                 second = null;
             }
-            else {timer1.Start(); }
-            
-        }
+            else { timer1.Start(); }
 
+        }
+        public static List<bool> GetHash(Bitmap bmpSource)
+        {
+            List<bool> lResult = new List<bool>();         
+            Bitmap bmpMin = new Bitmap(bmpSource, new Size(16, 16));
+            for (int j = 0; j < bmpMin.Height; j++)
+            {
+                for (int i = 0; i < bmpMin.Width; i++)
+                {
+                    //reduce colors to true / false                
+                    lResult.Add(bmpMin.GetPixel(i, j).GetBrightness() < 0.5f);
+                }
+            }
+            return lResult;
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -107,23 +109,5 @@ $"      diff = ImageChops.difference(image_one, image_two)" + "\n"+
             first = null;
             second = null;
         }
-
-        private void PlaceImagesToButtons()
-        {
-            Button button;
-            int randomNumber;
-            res = new List<Image>();
-            for(int i=0;i<tableLayoutPanel1.Controls.Count;i++)
-            {
-                if (tableLayoutPanel1.Controls[i] is Button)
-                    button = (Button)tableLayoutPanel1.Controls[i];
-                else
-                    continue;
-                randomNumber = rnd.Next(0, list.Count);
-                //button.Image = list[randomNumber];
-                res.Add(list[randomNumber]);
-                list.RemoveAt(randomNumber);              
-            }
-        } 
     }
 }
