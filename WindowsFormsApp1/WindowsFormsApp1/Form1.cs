@@ -16,48 +16,67 @@ namespace WindowsFormsApp1
     {
         Dictionary<Button, Bitmap> dict;   
         Button first, second;
-        List<Bitmap> res;
+        Random rnd = new Random();
+        List<Bitmap> Images = new List<Bitmap>() { Properties.Resources.Attack,
+            Properties.Resources.Blue,  
+            Properties.Resources.Green,
+            Properties.Resources.Blue,
+            Properties.Resources.DoubleDamage,
+            Properties.Resources.Defense, 
+            Properties.Resources.DeadlyPurple,
+            Properties.Resources.Purple,
+            Properties.Resources.DoubleDefense,
+            Properties.Resources.HealthRegen,
+            Properties.Resources.Attack,
+            Properties.Resources.Blue,
+            Properties.Resources.Green,  
+            Properties.Resources.HealthRegen,
+            Properties.Resources.Inspect,
+            Properties.Resources.Inspect, 
+            Properties.Resources.Defense,
+            Properties.Resources.DoubleDamage,
+            Properties.Resources.Purple,
+            Properties.Resources.Blue,
+            Properties.Resources.Attack,
+            Properties.Resources.Defense,
+            Properties.Resources.DeadlyPurple,
+            Properties.Resources.DeadlyPurple,
+            Properties.Resources.Attack,
+            Properties.Resources.Green,
+            Properties.Resources.Green,
+            Properties.Resources.Defense,
+            Properties.Resources.DeadlyPurple,
+            Properties.Resources.DoubleDefense,
+            Properties.Resources.HealthRegen,
+            Properties.Resources.HealthRegen,
+            Properties.Resources.DoubleDamage,
+            Properties.Resources.DoubleDamage,
+            Properties.Resources.Purple, 
+            Properties.Resources.Purple
+        } ;
+        List<Button> buttons;
         public Form1()
         {
-            InitializeComponent();           
+            InitializeComponent();
+            PlaceImagesToButtons(); 
+        }
+        public void PlaceImagesToButtons()
+        {
             dict = new Dictionary<Button, Bitmap>();
-            dict.Add(button1, Properties.Resources.Attack);
-            dict.Add(button2, Properties.Resources.Blue);
-            dict.Add(button3, Properties.Resources.Green);
-            dict.Add(button4, Properties.Resources.Blue);
-            dict.Add(button5, Properties.Resources.DoubleDamage);
-            dict.Add(button6, Properties.Resources.Defense);
-            dict.Add(button7, Properties.Resources.DeadlyPurple);
-            dict.Add(button8, Properties.Resources.Purple);
-            dict.Add(button9, Properties.Resources.DoubleDefense);
-            dict.Add(button10, Properties.Resources.HealthRegen);
-            dict.Add(button11, Properties.Resources.Attack);
-            dict.Add(button12, Properties.Resources.Blue);
-            dict.Add(button13, Properties.Resources.Green);
-            dict.Add(button14, Properties.Resources.HealthRegen);
-            dict.Add(button15, Properties.Resources.Inspect);
-            dict.Add(button16, Properties.Resources.Inspect);
-            dict.Add(button17, Properties.Resources.Defense);
-            dict.Add(button18, Properties.Resources.DoubleDamage);
-            dict.Add(button19, Properties.Resources.Purple);
-            dict.Add(button20, Properties.Resources.Blue);
-            dict.Add(button21, Properties.Resources.Attack);
-            dict.Add(button22, Properties.Resources.Defense);
-            dict.Add(button23, Properties.Resources.DeadlyPurple);
-            dict.Add(button24, Properties.Resources.DeadlyPurple);
-            dict.Add(button25, Properties.Resources.Attack);
-            dict.Add(button26, Properties.Resources.Green);
-            dict.Add(button27, Properties.Resources.Green);
-            dict.Add(button28, Properties.Resources.Defense);
-            dict.Add(button29, Properties.Resources.DeadlyPurple);
-            dict.Add(button30, Properties.Resources.DoubleDefense);
-            dict.Add(button31, Properties.Resources.HealthRegen);
-            dict.Add(button32, Properties.Resources.HealthRegen);
-            dict.Add(button33, Properties.Resources.DoubleDamage);
-            dict.Add(button34, Properties.Resources.DoubleDamage);
-            dict.Add(button35, Properties.Resources.Purple);
-            dict.Add(button36, Properties.Resources.Purple);
-            
+            buttons = new List<Button>() { button1,button2,button3,button4,button5,button6,button7, button8, button9, button10,
+            button11,button12,button13,button14,button15,button16,button17,button18,button19, button20, button21,button22,
+            button23, button24, button25, button26, button27,button28,button29,button30,button31,button32,button33,button34,
+            button35, button36};
+            int count = buttons.Count;
+            for(int i=0;i<count;i++)
+            {
+                var buttonNum = rnd.Next(0, buttons.Count);
+                var imageNum = rnd.Next(0, Images.Count);    
+                dict.Add(buttons[buttonNum], Images[imageNum]);
+                buttons.RemoveAt(buttonNum);
+                Images.RemoveAt(imageNum);
+            }
+
         }
         
         private void button_Click(object sender, EventArgs e)
@@ -92,8 +111,7 @@ namespace WindowsFormsApp1
             for (int j = 0; j < bmpMin.Height; j++)
             {
                 for (int i = 0; i < bmpMin.Width; i++)
-                {
-                    //reduce colors to true / false                
+                {              
                     lResult.Add(bmpMin.GetPixel(i, j).GetBrightness() < 0.5f);
                 }
             }
@@ -101,9 +119,7 @@ namespace WindowsFormsApp1
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Stop();
-            var img1 = first.Image;
-            var img2 = second.Image;
+            timer1.Stop();         
             first.Image = null;
             second.Image = null;
             first = null;
