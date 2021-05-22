@@ -86,17 +86,17 @@ namespace WindowsFormsApp1
             Button clickedButton = sender as Button;
             if (clickedButton == null)
                 return;
-            if (clickedButton.Image != null)
+            if (clickedButton.BackgroundImage != null)
                 return;
             if (first == null)
             {
                 first = clickedButton;
-                first.Image = dict[clickedButton];
+                first.BackgroundImage = dict[clickedButton];
                 return;
             }
             second = clickedButton;
-            second.Image = dict[clickedButton];
-            if (GetHash(new Bitmap(first.Image)).SequenceEqual(GetHash(new Bitmap(second.Image))))
+            second.BackgroundImage = dict[clickedButton];
+            if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(second.BackgroundImage))))
             {
                 first = null;
                 second = null;
@@ -120,8 +120,8 @@ namespace WindowsFormsApp1
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();         
-            first.Image = null;
-            second.Image = null;
+            first.BackgroundImage = null;
+            second.BackgroundImage = null;
             first = null;
             second = null;
         }

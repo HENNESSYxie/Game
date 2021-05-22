@@ -169,6 +169,7 @@ namespace WindowsFormsApp1
             // 
             // button36
             // 
+            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button36.Location = new System.Drawing.Point(440, 455);
             this.button36.Name = "button36";
@@ -179,6 +180,7 @@ namespace WindowsFormsApp1
             // 
             // button35
             // 
+            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button35.Location = new System.Drawing.Point(353, 455);
             this.button35.Name = "button35";
@@ -189,6 +191,7 @@ namespace WindowsFormsApp1
             // 
             // button34
             // 
+            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button34.Location = new System.Drawing.Point(266, 455);
             this.button34.Name = "button34";
@@ -199,6 +202,7 @@ namespace WindowsFormsApp1
             // 
             // button33
             // 
+            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button33.Location = new System.Drawing.Point(179, 455);
             this.button33.Name = "button33";
@@ -209,6 +213,7 @@ namespace WindowsFormsApp1
             // 
             // button32
             // 
+            this.button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button32.Location = new System.Drawing.Point(92, 455);
             this.button32.Name = "button32";
@@ -219,6 +224,7 @@ namespace WindowsFormsApp1
             // 
             // button31
             // 
+            this.button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button31.Location = new System.Drawing.Point(5, 455);
             this.button31.Name = "button31";
@@ -229,6 +235,7 @@ namespace WindowsFormsApp1
             // 
             // button30
             // 
+            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button30.Location = new System.Drawing.Point(440, 365);
             this.button30.Name = "button30";
@@ -239,6 +246,7 @@ namespace WindowsFormsApp1
             // 
             // button29
             // 
+            this.button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button29.Location = new System.Drawing.Point(353, 365);
             this.button29.Name = "button29";
@@ -249,6 +257,7 @@ namespace WindowsFormsApp1
             // 
             // button28
             // 
+            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button28.Location = new System.Drawing.Point(266, 365);
             this.button28.Name = "button28";
@@ -259,6 +268,7 @@ namespace WindowsFormsApp1
             // 
             // button27
             // 
+            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button27.Location = new System.Drawing.Point(179, 365);
             this.button27.Name = "button27";
@@ -269,6 +279,7 @@ namespace WindowsFormsApp1
             // 
             // button26
             // 
+            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button26.Location = new System.Drawing.Point(92, 365);
             this.button26.Name = "button26";
@@ -279,6 +290,7 @@ namespace WindowsFormsApp1
             // 
             // button25
             // 
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button25.Location = new System.Drawing.Point(5, 365);
             this.button25.Name = "button25";
@@ -289,6 +301,7 @@ namespace WindowsFormsApp1
             // 
             // button24
             // 
+            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button24.Location = new System.Drawing.Point(440, 275);
             this.button24.Name = "button24";
@@ -299,6 +312,7 @@ namespace WindowsFormsApp1
             // 
             // button23
             // 
+            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button23.Location = new System.Drawing.Point(353, 275);
             this.button23.Name = "button23";
@@ -309,6 +323,7 @@ namespace WindowsFormsApp1
             // 
             // button22
             // 
+            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button22.Location = new System.Drawing.Point(266, 275);
             this.button22.Name = "button22";
@@ -319,6 +334,7 @@ namespace WindowsFormsApp1
             // 
             // button21
             // 
+            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button21.Location = new System.Drawing.Point(179, 275);
             this.button21.Name = "button21";
@@ -329,6 +345,7 @@ namespace WindowsFormsApp1
             // 
             // button20
             // 
+            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button20.Location = new System.Drawing.Point(92, 275);
             this.button20.Name = "button20";
@@ -339,6 +356,7 @@ namespace WindowsFormsApp1
             // 
             // button19
             // 
+            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button19.Location = new System.Drawing.Point(5, 275);
             this.button19.Name = "button19";
@@ -349,6 +367,7 @@ namespace WindowsFormsApp1
             // 
             // button18
             // 
+            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button18.Location = new System.Drawing.Point(440, 185);
             this.button18.Name = "button18";
@@ -359,6 +378,7 @@ namespace WindowsFormsApp1
             // 
             // button17
             // 
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button17.Location = new System.Drawing.Point(353, 185);
             this.button17.Name = "button17";
@@ -369,6 +389,7 @@ namespace WindowsFormsApp1
             // 
             // button16
             // 
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button16.Location = new System.Drawing.Point(266, 185);
             this.button16.Name = "button16";
@@ -379,6 +400,7 @@ namespace WindowsFormsApp1
             // 
             // button15
             // 
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button15.Location = new System.Drawing.Point(179, 185);
             this.button15.Name = "button15";
@@ -389,6 +411,7 @@ namespace WindowsFormsApp1
             // 
             // button14
             // 
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button14.Location = new System.Drawing.Point(92, 185);
             this.button14.Name = "button14";
@@ -399,6 +422,7 @@ namespace WindowsFormsApp1
             // 
             // button13
             // 
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button13.Location = new System.Drawing.Point(5, 185);
             this.button13.Name = "button13";
@@ -409,6 +433,7 @@ namespace WindowsFormsApp1
             // 
             // button12
             // 
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button12.Location = new System.Drawing.Point(440, 95);
             this.button12.Name = "button12";
@@ -419,6 +444,7 @@ namespace WindowsFormsApp1
             // 
             // button11
             // 
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button11.Location = new System.Drawing.Point(353, 95);
             this.button11.Name = "button11";
@@ -429,6 +455,7 @@ namespace WindowsFormsApp1
             // 
             // button10
             // 
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button10.Location = new System.Drawing.Point(266, 95);
             this.button10.Name = "button10";
@@ -439,6 +466,7 @@ namespace WindowsFormsApp1
             // 
             // button9
             // 
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button9.Location = new System.Drawing.Point(179, 95);
             this.button9.Name = "button9";
@@ -449,6 +477,7 @@ namespace WindowsFormsApp1
             // 
             // button8
             // 
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button8.Location = new System.Drawing.Point(92, 95);
             this.button8.Name = "button8";
@@ -459,6 +488,7 @@ namespace WindowsFormsApp1
             // 
             // button7
             // 
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Location = new System.Drawing.Point(5, 95);
             this.button7.Name = "button7";
@@ -469,6 +499,7 @@ namespace WindowsFormsApp1
             // 
             // button6
             // 
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Location = new System.Drawing.Point(440, 5);
             this.button6.Name = "button6";
@@ -479,6 +510,7 @@ namespace WindowsFormsApp1
             // 
             // button5
             // 
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Location = new System.Drawing.Point(353, 5);
             this.button5.Name = "button5";
@@ -489,6 +521,7 @@ namespace WindowsFormsApp1
             // 
             // button4
             // 
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Location = new System.Drawing.Point(266, 5);
             this.button4.Name = "button4";
@@ -499,6 +532,7 @@ namespace WindowsFormsApp1
             // 
             // button3
             // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Location = new System.Drawing.Point(179, 5);
             this.button3.Name = "button3";
@@ -509,6 +543,7 @@ namespace WindowsFormsApp1
             // 
             // button2
             // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Location = new System.Drawing.Point(92, 5);
             this.button2.Name = "button2";
@@ -519,6 +554,7 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(5, 5);
             this.button1.Name = "button1";
