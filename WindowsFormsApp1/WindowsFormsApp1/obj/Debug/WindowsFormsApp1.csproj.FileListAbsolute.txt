@@ -23,3 +23,4 @@ D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources

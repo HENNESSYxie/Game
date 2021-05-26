@@ -105,8 +105,23 @@ namespace WindowsFormsApp1
             this.button71 = new System.Windows.Forms.Button();
             this.button72 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -623,338 +638,528 @@ namespace WindowsFormsApp1
             // 
             // button37
             // 
+            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button37.Location = new System.Drawing.Point(465, 445);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(85, 84);
             this.button37.TabIndex = 35;
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button38
             // 
+            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button38.Location = new System.Drawing.Point(373, 445);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(84, 84);
             this.button38.TabIndex = 34;
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button39
             // 
+            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button39.Location = new System.Drawing.Point(281, 445);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(84, 84);
             this.button39.TabIndex = 33;
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button40
             // 
+            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button40.Location = new System.Drawing.Point(189, 445);
             this.button40.Name = "button40";
             this.button40.Size = new System.Drawing.Size(84, 84);
             this.button40.TabIndex = 32;
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button41
             // 
+            this.button41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button41.Location = new System.Drawing.Point(97, 445);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(84, 84);
             this.button41.TabIndex = 31;
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button42
             // 
+            this.button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button42.Location = new System.Drawing.Point(5, 445);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(84, 84);
             this.button42.TabIndex = 30;
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button43
             // 
+            this.button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button43.Location = new System.Drawing.Point(465, 357);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(85, 80);
             this.button43.TabIndex = 29;
             this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button44
             // 
+            this.button44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button44.Location = new System.Drawing.Point(373, 357);
             this.button44.Name = "button44";
             this.button44.Size = new System.Drawing.Size(84, 80);
             this.button44.TabIndex = 28;
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button45
             // 
+            this.button45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button45.Location = new System.Drawing.Point(281, 357);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(84, 80);
             this.button45.TabIndex = 27;
             this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button46
             // 
+            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button46.Location = new System.Drawing.Point(189, 357);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(84, 80);
             this.button46.TabIndex = 26;
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button47
             // 
+            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button47.Location = new System.Drawing.Point(97, 357);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(84, 80);
             this.button47.TabIndex = 25;
             this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button48
             // 
+            this.button48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button48.Location = new System.Drawing.Point(5, 357);
             this.button48.Name = "button48";
             this.button48.Size = new System.Drawing.Size(84, 80);
             this.button48.TabIndex = 24;
             this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button49
             // 
+            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button49.Location = new System.Drawing.Point(465, 269);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(85, 80);
             this.button49.TabIndex = 23;
             this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button50
             // 
+            this.button50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button50.Location = new System.Drawing.Point(373, 269);
             this.button50.Name = "button50";
             this.button50.Size = new System.Drawing.Size(84, 80);
             this.button50.TabIndex = 22;
             this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button51
             // 
+            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button51.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button51.Location = new System.Drawing.Point(281, 269);
             this.button51.Name = "button51";
             this.button51.Size = new System.Drawing.Size(84, 80);
             this.button51.TabIndex = 21;
             this.button51.UseVisualStyleBackColor = true;
+            this.button51.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button52
             // 
+            this.button52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button52.Location = new System.Drawing.Point(189, 269);
             this.button52.Name = "button52";
             this.button52.Size = new System.Drawing.Size(84, 80);
             this.button52.TabIndex = 20;
             this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button53
             // 
+            this.button53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button53.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button53.Location = new System.Drawing.Point(97, 269);
             this.button53.Name = "button53";
             this.button53.Size = new System.Drawing.Size(84, 80);
             this.button53.TabIndex = 19;
             this.button53.UseVisualStyleBackColor = true;
+            this.button53.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button54
             // 
+            this.button54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button54.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button54.Location = new System.Drawing.Point(5, 269);
             this.button54.Name = "button54";
             this.button54.Size = new System.Drawing.Size(84, 80);
             this.button54.TabIndex = 18;
             this.button54.UseVisualStyleBackColor = true;
+            this.button54.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button55
             // 
+            this.button55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button55.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button55.Location = new System.Drawing.Point(465, 181);
             this.button55.Name = "button55";
             this.button55.Size = new System.Drawing.Size(85, 80);
             this.button55.TabIndex = 17;
             this.button55.UseVisualStyleBackColor = true;
+            this.button55.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button56
             // 
+            this.button56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button56.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button56.Location = new System.Drawing.Point(373, 181);
             this.button56.Name = "button56";
             this.button56.Size = new System.Drawing.Size(84, 80);
             this.button56.TabIndex = 16;
             this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button57
             // 
+            this.button57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button57.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button57.Location = new System.Drawing.Point(281, 181);
             this.button57.Name = "button57";
             this.button57.Size = new System.Drawing.Size(84, 80);
             this.button57.TabIndex = 15;
             this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button58
             // 
+            this.button58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button58.Location = new System.Drawing.Point(189, 181);
             this.button58.Name = "button58";
             this.button58.Size = new System.Drawing.Size(84, 80);
             this.button58.TabIndex = 14;
             this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button59
             // 
+            this.button59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button59.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button59.Location = new System.Drawing.Point(97, 181);
             this.button59.Name = "button59";
             this.button59.Size = new System.Drawing.Size(84, 80);
             this.button59.TabIndex = 13;
             this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button60
             // 
+            this.button60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button60.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button60.Location = new System.Drawing.Point(5, 181);
             this.button60.Name = "button60";
             this.button60.Size = new System.Drawing.Size(84, 80);
             this.button60.TabIndex = 12;
             this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button61
             // 
+            this.button61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button61.Location = new System.Drawing.Point(465, 93);
             this.button61.Name = "button61";
             this.button61.Size = new System.Drawing.Size(85, 80);
             this.button61.TabIndex = 11;
             this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button62
             // 
+            this.button62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button62.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button62.Location = new System.Drawing.Point(373, 93);
             this.button62.Name = "button62";
             this.button62.Size = new System.Drawing.Size(84, 80);
             this.button62.TabIndex = 10;
             this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button63
             // 
+            this.button63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button63.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button63.Location = new System.Drawing.Point(281, 93);
             this.button63.Name = "button63";
             this.button63.Size = new System.Drawing.Size(84, 80);
             this.button63.TabIndex = 9;
             this.button63.UseVisualStyleBackColor = true;
+            this.button63.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button64
             // 
+            this.button64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button64.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button64.Location = new System.Drawing.Point(189, 93);
             this.button64.Name = "button64";
             this.button64.Size = new System.Drawing.Size(84, 80);
             this.button64.TabIndex = 8;
             this.button64.UseVisualStyleBackColor = true;
+            this.button64.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button65
             // 
+            this.button65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button65.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button65.Location = new System.Drawing.Point(97, 93);
             this.button65.Name = "button65";
             this.button65.Size = new System.Drawing.Size(84, 80);
             this.button65.TabIndex = 7;
             this.button65.UseVisualStyleBackColor = true;
+            this.button65.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button66
             // 
+            this.button66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button66.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button66.Location = new System.Drawing.Point(5, 93);
             this.button66.Name = "button66";
             this.button66.Size = new System.Drawing.Size(84, 80);
             this.button66.TabIndex = 6;
             this.button66.UseVisualStyleBackColor = true;
+            this.button66.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button67
             // 
+            this.button67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button67.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button67.Location = new System.Drawing.Point(465, 5);
             this.button67.Name = "button67";
             this.button67.Size = new System.Drawing.Size(85, 80);
             this.button67.TabIndex = 5;
             this.button67.UseVisualStyleBackColor = true;
+            this.button67.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button68
             // 
+            this.button68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button68.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button68.Location = new System.Drawing.Point(373, 5);
             this.button68.Name = "button68";
             this.button68.Size = new System.Drawing.Size(84, 80);
             this.button68.TabIndex = 4;
             this.button68.UseVisualStyleBackColor = true;
+            this.button68.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button69
             // 
+            this.button69.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button69.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button69.Location = new System.Drawing.Point(281, 5);
             this.button69.Name = "button69";
             this.button69.Size = new System.Drawing.Size(84, 80);
             this.button69.TabIndex = 3;
             this.button69.UseVisualStyleBackColor = true;
+            this.button69.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button70
             // 
+            this.button70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button70.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button70.Location = new System.Drawing.Point(189, 5);
             this.button70.Name = "button70";
             this.button70.Size = new System.Drawing.Size(84, 80);
             this.button70.TabIndex = 2;
             this.button70.UseVisualStyleBackColor = true;
+            this.button70.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button71
             // 
+            this.button71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button71.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button71.Location = new System.Drawing.Point(97, 5);
             this.button71.Name = "button71";
             this.button71.Size = new System.Drawing.Size(84, 80);
             this.button71.TabIndex = 1;
             this.button71.UseVisualStyleBackColor = true;
+            this.button71.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // button72
             // 
+            this.button72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button72.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button72.Location = new System.Drawing.Point(5, 5);
             this.button72.Name = "button72";
             this.button72.Size = new System.Drawing.Size(84, 80);
             this.button72.TabIndex = 0;
             this.button72.UseVisualStyleBackColor = true;
+            this.button72.Click += new System.EventHandler(this.button_ClickForSecondPlayer);
             // 
             // timer1
             // 
             this.timer1.Interval = 800;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 800;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(811, 511);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(297, 245);
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(126, 247);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 25);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "ATTACK LEVEL :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(126, 283);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 25);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "DEFENSE LEVEL :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(1257, 300);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(195, 25);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "DEFENSE LEVEL :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(1257, 264);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(179, 25);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "ATTACK LEVEL :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(126, 208);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 25);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "NAME :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(1257, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 25);
+            this.label6.TabIndex = 43;
+            this.label6.Text = "NAME :";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(201, 343);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(452, 32);
+            this.progressBar1.TabIndex = 44;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(1332, 343);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(475, 32);
+            this.progressBar2.TabIndex = 45;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.Heart;
+            this.pictureBox2.Location = new System.Drawing.Point(126, 334);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 51);
+            this.pictureBox2.TabIndex = 46;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.Heart;
+            this.pictureBox3.Location = new System.Drawing.Point(1257, 334);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 51);
+            this.pictureBox3.TabIndex = 47;
+            this.pictureBox3.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -964,7 +1169,11 @@ namespace WindowsFormsApp1
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1045,6 +1254,18 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

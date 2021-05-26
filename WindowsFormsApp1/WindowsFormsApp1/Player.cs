@@ -12,17 +12,16 @@ namespace WindowsFormsApp1
         public int Health { get; set; }
         public int AttackLevel { get; set; }
         public int DefenseLevel { get; set; }
-        public Player(string name, int health = 100)
+        public int Defense { get; set; }
+        public int Attack { get; set; }
+        public Player(string name, int health = 100, int attack = 10, int defense = 5)
         {
+            AttackLevel = 1;
+            DefenseLevel = 1;
             Name = name;
             Health = health;
-        }
-        public Player(string name, int health = 100, int defense = 1, int attack = 1)
-        {
-            Name = name;
-            Health = health;
-            AttackLevel = attack;
-            DefenseLevel = defense;
-        }
+            Defense = defense;
+            Attack = attack;
+        }     
     }
 }
