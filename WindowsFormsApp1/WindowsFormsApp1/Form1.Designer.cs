@@ -117,6 +117,8 @@ namespace WindowsFormsApp1
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1143,6 +1145,16 @@ namespace WindowsFormsApp1
             this.pictureBox3.TabIndex = 47;
             this.pictureBox3.TabStop = false;
             // 
+            // timer3
+            // 
+            this.timer3.Interval = 3000;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // timer4
+            // 
+            this.timer4.Interval = 3000;
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1266,6 +1278,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
     }
 }
 

@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -56,6 +57,8 @@ namespace WindowsFormsApp1
         } ;
         List<Bitmap> ImagesCopy;
         List<Button> buttons;
+        List<Button> buttons1NULLs;
+        List<Button> buttons2NULLs;
         Dictionary<Button, Bitmap> dict2;
         List<Button> buttons2;
         Player you, enemy;
@@ -107,7 +110,7 @@ namespace WindowsFormsApp1
             int count = buttons2.Count;
             for (int i = 0; i < count; i++)
             {
-                var buttonNum = rnd.Next(0, buttons.Count);
+                var buttonNum = rnd.Next(0, buttons2.Count);
                 var imageNum = rnd.Next(0, Images.Count);
                 dict2.Add(buttons2[buttonNum], ImagesCopy[imageNum]);
                 buttons2.RemoveAt(buttonNum);
@@ -139,43 +142,76 @@ namespace WindowsFormsApp1
                 {
                     if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Attack))))
                     {
-                        MessageBox.Show("Attack");
+                        you.AttackLevel += 1;
+                        label1.Text = $"ATTACK LEVEL : {you.AttackLevel}";
+                        MessageBox.Show("+1 TO YOUR ATTACK LEVEL");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Blue))))
                     {
-                        MessageBox.Show("Blue");
+                        you.Health += 1;
+                        progressBar1.Value = you.Health;
+                        MessageBox.Show("You got +1 HP");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DeadlyPurple))))
                     {
-                        MessageBox.Show("DeadlyPURPLE");
+                        you.Health -= 10;
+                        progressBar1.Value = you.Health;
+                        MessageBox.Show("DeadlyPURPLE - you lost 10 health points");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Purple))))
                     {
+                        you.Health += 2;
+                        progressBar1.Value = you.Health;
                         MessageBox.Show("Purple");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Defense))))
                     {
-                        MessageBox.Show("Defense");
+                        you.DefenseLevel += 1;
+                        label2.Text = $"DEFENSE LEVEL : {you.DefenseLevel}";
+                        MessageBox.Show("+1 to LEVEL OF DEFENSE");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DoubleDefense))))
                     {
-                        MessageBox.Show("DoubleDefense");
+                        you.DefenseLevel *= 2;
+                        label2.Text = $"DEFENSE LEVEL : {you.DefenseLevel}";
+                        MessageBox.Show("LEVEL OF DEFENSE x2");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DoubleDamage))))
                     {
-                        MessageBox.Show("DoubleDamage");
+                        you.AttackLevel *= 2;
+                        label1.Text = $"ATTACK LEVEL : {you.AttackLevel}";
+                        MessageBox.Show("LEVEL OF ATTACK x2");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Green))))
                     {
-                        MessageBox.Show("Green");
+                        you.Health += 5;
+                        progressBar1.Value = you.Health;
+                        MessageBox.Show("+5 HP");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.HealthRegen))))
                     {
-                        MessageBox.Show("HealthRegen");
+                        you.Health += 10;
+                        progressBar1.Value = you.Health;
+                        MessageBox.Show("+10 HP");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Inspect))))
                     {
-                        MessageBox.Show("Inspect");
+                        MessageBox.Show("Inspect your cards for a 3 sec");
+                        var buttons1Copy = new List<Button>() { button1,button2,button3,button4,button5,button6,button7, button8, button9, button10,
+                        button11,button12,button13,button14,button15,button16,button17,button18,button19, button20, button21,button22,
+                        button23, button24, button25, button26, button27,button28,button29,button30,button31,button32,button33,button34,
+                        button35, button36};
+                        buttons1NULLs = new List<Button>();
+
+                        foreach (var el in buttons1Copy)
+                        {
+                            if (el.BackgroundImage == null)
+                            {
+                                buttons1NULLs.Add(el);
+                            }
+                            el.BackgroundImage = dict[el];
+                        }
+                        timer3.Start();
                     }
                     first = null;
                     second = null;
@@ -187,6 +223,21 @@ namespace WindowsFormsApp1
             pictureBox1.BackgroundImage = Properties.Resources.Arrow_left;
 
         }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            timer3.Stop();     
+            foreach (var el in buttons1NULLs)
+                el.BackgroundImage = null;
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            timer4.Stop();
+            foreach (var el in buttons2NULLs)
+                el.BackgroundImage = null;
+        }
+
         public static List<bool> GetHash(Bitmap bmpSource)
         {
             List<bool> lResult = new List<bool>();         
@@ -224,43 +275,76 @@ namespace WindowsFormsApp1
                 {
                     if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Attack))))
                     {
-                        MessageBox.Show("Attack");
+                        enemy.AttackLevel += 1;
+                        label4.Text = $"ATTACK LEVEL : {enemy.AttackLevel}";
+                        MessageBox.Show("+1 TO YOUR ATTACK LEVEL");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Blue))))
                     {
-                        MessageBox.Show("Blue");
+                        enemy.Health += 1;
+                        progressBar2.Value = enemy.Health;
+                        MessageBox.Show("You got +1 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DeadlyPurple))))
                     {
-                        MessageBox.Show("DeadlyPURPLE");
+                        enemy.Health -= 10;
+                        progressBar2.Value = enemy.Health;
+                        MessageBox.Show("DeadlyPURPLE - you lost 10 health points");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Purple))))
                     {
-                        MessageBox.Show("Purple");
+                        enemy.Health += 2;
+                        progressBar2.Value = enemy.Health;
+                        MessageBox.Show("Purple +2 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Defense))))
                     {
-                        MessageBox.Show("Defense");
+                        enemy.DefenseLevel += 1;
+                        label3.Text = $"DEFENSE LEVEL : {enemy.DefenseLevel}";
+                        MessageBox.Show("+1 to LEVEL OF DEFENSE");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DoubleDefense))))
                     {
-                        MessageBox.Show("DoubleDefense");
+                        enemy.DefenseLevel *= 2;
+                        label3.Text = $"DEFENSE LEVEL : {enemy.DefenseLevel}";
+                        MessageBox.Show("LEVEL OF DEFENSE x2");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DoubleDamage))))
                     {
-                        MessageBox.Show("DoubleDamage");
+                        enemy.AttackLevel *= 2;
+                        label4.Text = $"ATTACK LEVEL : {enemy.AttackLevel}";
+                        MessageBox.Show("LEVEL OF ATTACK x2");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Green))))
                     {
-                        MessageBox.Show("Green");
+                        enemy.Health += 5;
+                        progressBar2.Value = enemy.Health;
+                        MessageBox.Show("+5 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.HealthRegen))))
                     {
-                        MessageBox.Show("HealthRegen");
+                        enemy.Health += 10;
+                        progressBar2.Value = enemy.Health;
+                        MessageBox.Show("+10 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Inspect))))
                     {
-                        MessageBox.Show("Inspect");
+                        MessageBox.Show("Inspect your cards for a 3 sec");
+                        var buttons2Copy = new List<Button>() { button37,button38,button39,button40,button41,button42,button43, button44, button45, button46,
+            button47,button48,button49,button50,button51,button52,button53,button54,button55, button56, button57,button58,
+            button59, button60, button61, button62, button63,button64,button65,button66,button67,button68,button69,button70,
+            button71, button72};
+                        buttons2NULLs = new List<Button>();
+
+                        foreach (var el in buttons2Copy)
+                        {
+                            if (el.BackgroundImage == null)
+                            {
+                                buttons2NULLs.Add(el);
+                            }
+                            el.BackgroundImage = dict2[el];
+                        }
+                        timer4.Start();
                     }
                     first2 = null;
                     second2 = null;
