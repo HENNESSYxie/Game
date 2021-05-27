@@ -119,6 +119,10 @@ namespace WindowsFormsApp1
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.roundButton2 = new WindowsFormsApp1.RoundButton();
+            this.roundButton1 = new WindowsFormsApp1.RoundButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1115,16 +1119,16 @@ namespace WindowsFormsApp1
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(201, 343);
+            this.progressBar1.Location = new System.Drawing.Point(201, 334);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(452, 32);
+            this.progressBar1.Size = new System.Drawing.Size(452, 41);
             this.progressBar1.TabIndex = 44;
             // 
             // progressBar2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(1332, 343);
+            this.progressBar2.Location = new System.Drawing.Point(1332, 334);
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(475, 32);
+            this.progressBar2.Size = new System.Drawing.Size(475, 41);
             this.progressBar2.TabIndex = 45;
             // 
             // pictureBox2
@@ -1155,12 +1159,57 @@ namespace WindowsFormsApp1
             this.timer4.Interval = 3000;
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(370, 343);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 24);
+            this.label7.TabIndex = 50;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(1543, 343);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 24);
+            this.label8.TabIndex = 51;
+            // 
+            // roundButton2
+            // 
+            this.roundButton2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Pause;
+            this.roundButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButton2.Location = new System.Drawing.Point(12, 2);
+            this.roundButton2.Name = "roundButton2";
+            this.roundButton2.Size = new System.Drawing.Size(98, 98);
+            this.roundButton2.TabIndex = 49;
+            this.roundButton2.UseVisualStyleBackColor = true;
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Sound;
+            this.roundButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundButton1.Location = new System.Drawing.Point(1794, 12);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(98, 98);
+            this.roundButton1.TabIndex = 48;
+            this.roundButton1.UseVisualStyleBackColor = true;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.roundButton2);
+            this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.progressBar2);
@@ -1179,6 +1228,7 @@ namespace WindowsFormsApp1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1280,6 +1330,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
+        private RoundButton roundButton1;
+        private RoundButton roundButton2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 

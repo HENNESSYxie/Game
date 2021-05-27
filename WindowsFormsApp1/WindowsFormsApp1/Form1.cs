@@ -63,15 +63,20 @@ namespace WindowsFormsApp1
         List<Button> buttons2;
         Player you, enemy;
         bool yourTurn = true;
+        System.Media.SoundPlayer SoundPlayer;
+        int clickCount;
 
         public Form1(string txt1, string txt2)
         {
             InitializeComponent();
             ImagesCopy = new List<Bitmap>(Images);
-                  
+            SoundPlayer = new System.Media.SoundPlayer(Properties.Resources.SOAD_TOXICITY);
+            SoundPlayer.PlayLooping();         
             you = new Player(txt1) ;
             enemy = new Player(txt2);
             progressBar1.Value = you.Health;
+            label7.Text = you.Health.ToString();
+            label8.Text = enemy.Health.ToString();
             progressBar2.Value = enemy.Health;
             label5.Text = $"NAME : {you.Name}";
             label6.Text = $"NAME : {enemy.Name}";
@@ -151,18 +156,21 @@ namespace WindowsFormsApp1
                     {
                         you.Health += 1;
                         progressBar1.Value = you.Health;
+                        label7.Text = you.Health.ToString();                     
                         MessageBox.Show("You got +1 HP");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DeadlyPurple))))
                     {
                         you.Health -= 10;
                         progressBar1.Value = you.Health;
+                        label7.Text = you.Health.ToString();
                         MessageBox.Show("DeadlyPURPLE - you lost 10 health points");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Purple))))
                     {
                         you.Health += 2;
                         progressBar1.Value = you.Health;
+                        label7.Text = you.Health.ToString();
                         MessageBox.Show("Purple");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Defense))))
@@ -187,12 +195,14 @@ namespace WindowsFormsApp1
                     {
                         you.Health += 5;
                         progressBar1.Value = you.Health;
+                        label7.Text = you.Health.ToString();
                         MessageBox.Show("+5 HP");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.HealthRegen))))
                     {
                         you.Health += 10;
                         progressBar1.Value = you.Health;
+                        label7.Text = you.Health.ToString();
                         MessageBox.Show("+10 HP");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Inspect))))
@@ -220,6 +230,7 @@ namespace WindowsFormsApp1
                 else { timer1.Start(); }
             }
             progressBar1.Value = you.Health;
+            label7.Text = you.Health.ToString();
             yourTurn = false;
             pictureBox1.BackgroundImage = Properties.Resources.Arrow_left;
 
@@ -237,6 +248,20 @@ namespace WindowsFormsApp1
             timer4.Stop();
             foreach (var el in buttons2NULLs)
                 el.BackgroundImage = null;
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            clickCount++;
+            if (clickCount % 2 == 1)
+                SoundPlayer.Stop();
+            else
+                SoundPlayer.PlayLooping();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SoundPlayer.Stop();
         }
 
         public static List<bool> GetHash(Bitmap bmpSource)
@@ -284,18 +309,21 @@ namespace WindowsFormsApp1
                     {
                         enemy.Health += 1;
                         progressBar2.Value = enemy.Health;
+                        label8.Text = enemy.Health.ToString();
                         MessageBox.Show("You got +1 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.DeadlyPurple))))
                     {
                         enemy.Health -= 10;
                         progressBar2.Value = enemy.Health;
+                        label8.Text = enemy.Health.ToString();
                         MessageBox.Show("DeadlyPURPLE - you lost 10 health points");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Purple))))
                     {
                         enemy.Health += 2;
                         progressBar2.Value = enemy.Health;
+                        label8.Text = enemy.Health.ToString();
                         MessageBox.Show("Purple +2 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Defense))))
@@ -320,12 +348,14 @@ namespace WindowsFormsApp1
                     {
                         enemy.Health += 5;
                         progressBar2.Value = enemy.Health;
+                        label8.Text = enemy.Health.ToString();
                         MessageBox.Show("+5 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.HealthRegen))))
                     {
                         enemy.Health += 10;
                         progressBar2.Value = enemy.Health;
+                        label8.Text = enemy.Health.ToString();
                         MessageBox.Show("+10 HP");
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Inspect))))
@@ -353,6 +383,7 @@ namespace WindowsFormsApp1
                 else { timer2.Start(); }
             }
             progressBar2.Value = enemy.Health;
+            label8.Text = enemy.Health.ToString();
             yourTurn = true;
             pictureBox1.BackgroundImage = Properties.Resources.Arrow_right;
         }

@@ -22,6 +22,10 @@ D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.xml
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
-D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EntryNames.resources
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.MediaPlayer.dll
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
