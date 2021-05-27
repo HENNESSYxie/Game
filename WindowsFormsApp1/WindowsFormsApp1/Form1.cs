@@ -64,12 +64,13 @@ namespace WindowsFormsApp1
         Player you, enemy;
         bool yourTurn = true;
 
-        public Form1()
+        public Form1(string txt1, string txt2)
         {
             InitializeComponent();
             ImagesCopy = new List<Bitmap>(Images);
-            you = new Player("YOU");
-            enemy = new Player("ENEMY");
+                  
+            you = new Player(txt1) ;
+            enemy = new Player(txt2);
             progressBar1.Value = you.Health;
             progressBar2.Value = enemy.Health;
             label5.Text = $"NAME : {you.Name}";

@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class MainMenu : Form
+    public partial class EntryNames : Form
     {
-        public MainMenu()
+        public  EntryNames()
         {
             InitializeComponent();
         }
 
-        private void roundButton2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            EntryNames en = new EntryNames();
-            en.ShowDialog();
+            Form1 f1 = new Form1(textBox1.Text,textBox2.Text);
+            f1.ShowDialog();
         }
     }
 }
