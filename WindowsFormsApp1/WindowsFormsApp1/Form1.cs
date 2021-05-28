@@ -65,6 +65,7 @@ namespace WindowsFormsApp1
         bool yourTurn = true;
         System.Media.SoundPlayer SoundPlayer;
         int clickCount;
+        bool inspectCard;
 
         public Form1(string txt1, string txt2)
         {
@@ -171,7 +172,7 @@ namespace WindowsFormsApp1
                         you.Health += 2;
                         progressBar1.Value = you.Health;
                         label7.Text = you.Health.ToString();
-                        MessageBox.Show("Purple");
+                        MessageBox.Show("Purple + 2 HP");
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Defense))))
                     {
@@ -207,6 +208,7 @@ namespace WindowsFormsApp1
                     }
                     else if (GetHash(new Bitmap(first.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Inspect))))
                     {
+                        inspectCard = true;
                         MessageBox.Show("Inspect your cards for a 3 sec");
                         var buttons1Copy = new List<Button>() { button1,button2,button3,button4,button5,button6,button7, button8, button9, button10,
                         button11,button12,button13,button14,button15,button16,button17,button18,button19, button20, button21,button22,
@@ -224,16 +226,33 @@ namespace WindowsFormsApp1
                         }
                         timer3.Start();
                     }
+                    
+                    if ((you.Attack * you.AttackLevel) - (enemy.Defense * enemy.DefenseLevel) < 0)
+                        enemy.Health = enemy.Health;
+                    else
+                        enemy.Health -= ((you.Attack * you.AttackLevel) - (enemy.Defense * enemy.DefenseLevel));
+                    progressBar2.Value = enemy.Health;
+                    label8.Text = enemy.Health.ToString();
                     first = null;
                     second = null;
+                    CheckForWinner();
                 }
                 else { timer1.Start(); }
             }
+            inspectCard = false;
             progressBar1.Value = you.Health;
             label7.Text = you.Health.ToString();
-            yourTurn = false;
-            pictureBox1.BackgroundImage = Properties.Resources.Arrow_left;
-
+            if (!CheckForLeftCards(enemy))
+            {
+                yourTurn = false;
+                pictureBox1.BackgroundImage = Properties.Resources.Arrow_left;
+            }
+            else
+            {
+                yourTurn = true;
+                pictureBox1.BackgroundImage = Properties.Resources.Arrow_right;
+            }
+            
         }
 
         private void timer3_Tick(object sender, EventArgs e)
@@ -360,6 +379,7 @@ namespace WindowsFormsApp1
                     }
                     else if (GetHash(new Bitmap(first2.BackgroundImage)).SequenceEqual(GetHash(new Bitmap(Properties.Resources.Inspect))))
                     {
+                        inspectCard = true;
                         MessageBox.Show("Inspect your cards for a 3 sec");
                         var buttons2Copy = new List<Button>() { button37,button38,button39,button40,button41,button42,button43, button44, button45, button46,
             button47,button48,button49,button50,button51,button52,button53,button54,button55, button56, button57,button58,
@@ -377,15 +397,32 @@ namespace WindowsFormsApp1
                         }
                         timer4.Start();
                     }
+                    if ((enemy.Attack * enemy.AttackLevel) - (you.Defense * you.DefenseLevel) < 0)
+                        you.Health = you.Health;
+                    else
+                        you.Health -= ((enemy.Attack * enemy.AttackLevel) - (you.Defense * you.DefenseLevel));
+                    progressBar1.Value = you.Health;
+                    label7.Text = you.Health.ToString();
                     first2 = null;
-                    second2 = null;
+                    second2 = null; 
+                    CheckForWinner(); 
                 }
                 else { timer2.Start(); }
-            }
+            } 
+            inspectCard = false;
             progressBar2.Value = enemy.Health;
             label8.Text = enemy.Health.ToString();
-            yourTurn = true;
-            pictureBox1.BackgroundImage = Properties.Resources.Arrow_right;
+            if (!CheckForLeftCards(you))
+            {
+                yourTurn = true;
+                pictureBox1.BackgroundImage = Properties.Resources.Arrow_right;
+            }
+            else
+            {
+                yourTurn = false;
+                pictureBox1.BackgroundImage = Properties.Resources.Arrow_left;
+            }
+            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -404,6 +441,80 @@ namespace WindowsFormsApp1
             second.BackgroundImage = null;
             first = null;
             second = null;
+        }
+
+        public void CheckForWinner()
+        {
+            DialogResult result;
+            if (you.Health == 0)
+            {
+               result =  MessageBox.Show($"{enemy.Name} WIN! TRY AGAIN?","THE GAME IS ENDED", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+               if (result == DialogResult.Yes)
+                { Close(); }
+               else
+                { Application.Exit(); }
+            }
+            else if (enemy.Health == 0)
+            {
+                result = MessageBox.Show($"{you.Name} WIN! TRY AGAIN?", "THE GAME IS ENDED", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                { Close(); }
+                else
+                { Application.Exit(); }
+            }           
+            else if ((CheckForLeftCards(you) && !inspectCard && CheckForLeftCards(enemy) && !inspectCard))
+            {
+                if(you.Health > enemy.Health)
+                {
+                    result = MessageBox.Show($"{you.Name} WIN! TRY AGAIN?", "THE GAME IS ENDED", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    { Close(); }
+                    else
+                    { Application.Exit(); }
+                }
+                if(you.Health < enemy.Health)
+                {
+                    result = MessageBox.Show($"{enemy.Name} WIN! TRY AGAIN?", "THE GAME IS ENDED", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    { Close(); }
+                    else
+                    { Application.Exit(); }
+                }
+            }
+        }
+
+        public bool CheckForLeftCards(Player player)
+        {
+            int count = 0;
+            if (player == you)
+            {
+                var buttons1Copy = new List<Button>() { button1,button2,button3,button4,button5,button6,button7, button8, button9, button10,
+                        button11,button12,button13,button14,button15,button16,button17,button18,button19, button20, button21,button22,
+                        button23, button24, button25, button26, button27,button28,button29,button30,button31,button32,button33,button34,
+                        button35, button36};
+                foreach(var el in buttons1Copy)
+                {
+                    if (el.BackgroundImage != null)
+                        count++;
+                }
+                if (count == 36)
+                    return true;              
+            }
+            if (player == enemy)
+            {
+                var buttons2Copy = new List<Button>() { button37,button38,button39,button40,button41,button42,button43, button44, button45, button46,
+            button47,button48,button49,button50,button51,button52,button53,button54,button55, button56, button57,button58,
+            button59, button60, button61, button62, button63,button64,button65,button66,button67,button68,button69,button70,
+            button71, button72};
+                foreach(var el in buttons2Copy)
+                {
+                    if (el.BackgroundImage != null)
+                        count++;                    
+                }
+                if (count == 36)
+                    return true;
+            }
+            return false;
         }
     }
 }

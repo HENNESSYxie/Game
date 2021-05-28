@@ -22,6 +22,11 @@ namespace WindowsFormsApp1
                     value = 100;
                     health = value;
                 }
+                else if (value < 0)
+                {
+                    value = 0;
+                    health = value;
+                }
                 else
                     health = value;
             }
@@ -56,7 +61,7 @@ namespace WindowsFormsApp1
         }
         public int Defense { get; set; }
         public int Attack { get; set; }
-        public Player(string name, int health = 100, int attack = 10, int defense = 5)
+        public Player(string name, int health = 100, int attack =1, int defense = 1)
         {
             this.attackLevel = 1;
             this.defenseLevel = 1;

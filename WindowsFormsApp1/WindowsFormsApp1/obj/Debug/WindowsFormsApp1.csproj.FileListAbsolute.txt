@@ -29,3 +29,4 @@ D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
