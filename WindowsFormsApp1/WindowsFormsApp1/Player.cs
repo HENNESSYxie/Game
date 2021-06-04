@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
         }
         public int Defense { get; set; }
         public int Attack { get; set; }
-        public Player(string name, int health = 100, int attack =1, int defense = 1)
+        public Player(string name, int health = 100, int attack =3, int defense = 1)
         {
             this.attackLevel = 1;
             this.defenseLevel = 1;
