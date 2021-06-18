@@ -78,7 +78,13 @@ namespace WindowsFormsApp1
         private void timer1_Tick(object sender, EventArgs e)
         {
             gameModel.Timer1();
-        }   
+        }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+            PauseMenu pause = new PauseMenu();
+            pause.ShowDialog();
+        }
     }
 
     public class View
@@ -91,7 +97,7 @@ namespace WindowsFormsApp1
             this.f1 = f1;
         }
 
-        public void ShowInformation()
+        public void ShowInformation() // отображает информацию об игроках на контролах
         {
             f1.progressBar1.Value = gameModel.you.Health;
             f1.label7.Text = gameModel.you.Health.ToString();
@@ -168,7 +174,7 @@ namespace WindowsFormsApp1
 
         }   
          
-        public void PlaceImagesToButtons()
+        public void PlaceImagesToButtons() // распологает картинки на кнопках для первого поля
         {
             dict = new Dictionary<Button, Bitmap>();
             buttons = new List<Button>() { f1.button1,f1.button2,f1.button3,f1.button4,f1.button5,f1.button6,
@@ -188,7 +194,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        public void PlaceImagesToButtons2()
+        public void PlaceImagesToButtons2() // распологает картинки на кнопках для второго поля
         {
             dict2 = new Dictionary<Button, Bitmap>();
             buttons2 = new List<Button>() { f1.button37,f1.button38,f1.button39,f1.button40,f1.button41,f1.button42,
@@ -208,7 +214,7 @@ namespace WindowsFormsApp1
             }
         }
        
-        public static List<bool> GetHash(Bitmap bmpSource)
+        public static List<bool> GetHash(Bitmap bmpSource) // метод позволяет сравнивать картинки, уменьшая размер до 16х16, превращаю картинку в ч/б изображение и получая массивы точек
         {
             List<bool> lResult = new List<bool>();
             Bitmap bmpMin = new Bitmap(bmpSource, new Size(16, 16));
@@ -221,7 +227,7 @@ namespace WindowsFormsApp1
             }
             return lResult;
         }
-        public bool CheckForLeftCards(Player player)
+        public bool CheckForLeftCards(Player player) // Проверка того, что остались ли еще не открытые карты у игрока(игрок аргумент, для него и проверяется)
         {
             int count = 0;
             if (player == you)
@@ -259,7 +265,7 @@ namespace WindowsFormsApp1
             return false;
         }
 
-        public void MakeMove(object sender)
+        public void MakeMove(object sender) // ход первого игрока
         {
             if (yourTurn)
             {
@@ -366,7 +372,7 @@ namespace WindowsFormsApp1
                 f1.pictureBox1.BackgroundImage = Properties.Resources.Arrow_right;
             }
         }
-        public void CheckForWinner()
+        public void CheckForWinner() // проверка победителя
         {
             DialogResult result;
             if (you.Health == 0)
@@ -402,7 +408,7 @@ namespace WindowsFormsApp1
             }
 
         }
-        public void MakeMoveSecondPlayer(object sender)
+        public void MakeMoveSecondPlayer(object sender) // ход второго игрока
         {
             if (!yourTurn)
             {

@@ -193,3 +193,5 @@ C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\Wind
 C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MultiPlayer.resources
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SinglePlayer.resources
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Map.resources
+D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PauseMenu.resources

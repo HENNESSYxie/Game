@@ -80,11 +80,17 @@
     <Compile Include="MultiPlayer.Designer.cs">
       <DependentUpon>MultiPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Map.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseMenu.Designer.cs">
+      <DependentUpon>PauseMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="SinglePlayer.cs">
       <SubType>Form</SubType>
@@ -112,8 +118,14 @@
     <EmbeddedResource Include="EntryNames.resx">
       <DependentUpon>EntryNames.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MultiPlayer.resx">
       <DependentUpon>MultiPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseMenu.resx">
+      <DependentUpon>PauseMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SinglePlayer.resx">
       <DependentUpon>SinglePlayer.cs</DependentUpon>
@@ -261,6 +273,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Sounds\SOAD TOXICITY.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bg for entry names.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bg for main menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bg for multiplayer.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

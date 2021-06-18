@@ -16,12 +16,13 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        private void roundButton1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            SinglePlayer form3 = new SinglePlayer("player", "bot");
-            form3.ShowDialog();
+            Map map = new Map();
+            map.ShowDialog();
         }
-        private void roundButton2_Click(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
             EntryNames en = new EntryNames();
             en.ShowDialog();

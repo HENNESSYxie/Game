@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
     {
         System.Media.SoundPlayer SoundPlayer;
         int clickCount;
-        GameModeWithNPC GameModeWithNPC;
+        public GameModeWithNPC GameModeWithNPC;
         ViewWithNPC ViewWithNPC;
         public SinglePlayer(string txt1, string txt2)
         {
@@ -87,6 +87,12 @@ namespace WindowsFormsApp1
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+            PauseMenu pause = new PauseMenu();
+            pause.ShowDialog();
         }
     }
 
@@ -167,6 +173,7 @@ namespace WindowsFormsApp1
         public Player you, enemy;
         bool yourTurn = true;
         bool inspectCard;
+        public bool isGameWon;
         SinglePlayer f1;
 
         public GameModeWithNPC(Player you, Player enemy, SinglePlayer f1)
@@ -414,30 +421,39 @@ namespace WindowsFormsApp1
             {
                 result = MessageBox.Show($"{enemy.Name} WIN! TRY AGAIN?", "THE GAME IS ENDED", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
+                {
+                    isGameWon = false;
                     f1.Close();
+                    f1.ShowDialog();
+                }
                 else Application.Exit();
             }
             else if (enemy.Health == 0)
             {
-                result = MessageBox.Show($"{you.Name} WIN! TRY AGAIN?", "THE GAME IS ENDED", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
+                result = MessageBox.Show($"{you.Name} WIN!", "THE GAME IS ENDED");
+                isGameWon = true;
+                if (result == DialogResult.OK)
                     f1.Close();
-                else Application.Exit();
+
             }
             else if ((CheckForLeftCards(you) && !inspectCard && CheckForLeftCards(enemy) && !inspectCard))
             {
                 if (you.Health > enemy.Health)
                 {
-                    result = MessageBox.Show($"{you.Name} WIN! TRY AGAIN?", "THE GAME IS ENDED", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (result == DialogResult.Yes)
+                    result = MessageBox.Show($"{you.Name} WIN! ", "THE GAME IS ENDED");
+                    isGameWon = true;
+                    if (result == DialogResult.OK)
                         f1.Close();
-                    else Application.Exit();
                 }
                 if (you.Health < enemy.Health)
                 {
                     result = MessageBox.Show($"{enemy.Name} WIN! TRY AGAIN?", "THE GAME IS ENDED", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
+                    {
+                        isGameWon = false;
                         f1.Close();
+                        f1.ShowDialog();
+                    }
                     else Application.Exit();
                 }
             }
