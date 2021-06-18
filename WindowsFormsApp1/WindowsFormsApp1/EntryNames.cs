@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1(textBox1.Text,textBox2.Text);
+            MultiPlayer f1 = new MultiPlayer(textBox1.Text,textBox2.Text);
             f1.ShowDialog();
         }
     }

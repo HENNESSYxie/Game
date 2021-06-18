@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         }
         private void roundButton1_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3("player", "bot");
+            SinglePlayer form3 = new SinglePlayer("player", "bot");
             form3.ShowDialog();
         }
         private void roundButton2_Click(object sender, EventArgs e)

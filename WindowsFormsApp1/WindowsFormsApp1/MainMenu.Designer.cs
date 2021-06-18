@@ -69,6 +69,7 @@ namespace WindowsFormsApp1
             this.ClientSize = new System.Drawing.Size(1039, 620);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.roundButton2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
