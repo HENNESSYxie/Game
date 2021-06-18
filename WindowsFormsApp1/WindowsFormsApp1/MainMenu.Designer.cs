@@ -59,6 +59,7 @@ namespace WindowsFormsApp1
             this.roundButton1.Size = new System.Drawing.Size(977, 263);
             this.roundButton1.TabIndex = 2;
             this.roundButton1.UseVisualStyleBackColor = true;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // MainMenu
             // 

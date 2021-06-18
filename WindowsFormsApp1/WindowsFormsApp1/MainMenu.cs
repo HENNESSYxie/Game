@@ -16,7 +16,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3("player", "bot");
+            form3.ShowDialog();
+        }
         private void roundButton2_Click(object sender, EventArgs e)
         {
             EntryNames en = new EntryNames();

@@ -30,35 +30,165 @@ D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
 D:\Game\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.xml
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.xml
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.xml
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.xml
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.xml
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.MediaPlayer.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EntryNames.resources
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\gbol5\Documents\GitHub\Game\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.xml
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.xml
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.xml
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.xml
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EntryNames.resources
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\gbol5\Downloads\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.MediaPlayer.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.xml
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.xml
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.xml
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.xml
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.xml
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EntryNames.resources
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EntryNames.resources
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.xml
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.xml
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.xml
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.xml
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\gbol5\Downloads\Telegram Desktop\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.xml
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.xml
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.xml
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.xml
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.xml
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.MediaPlayer.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EntryNames.resources
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Всякая всячина\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\game-main\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.xml
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Modules.xml
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.SQLite.xml
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IronPython.Wpf.xml
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.xml
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPDXMLib.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLauncher.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Interop.WMPLib.dll
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.EntryNames.resources
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainMenu.resources
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\HENNESSY-\Desktop\Новая папка\Game-main\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
